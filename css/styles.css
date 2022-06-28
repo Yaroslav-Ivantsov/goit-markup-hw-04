@@ -36,12 +36,6 @@ html{
 
 
 
-
-
-
-
-
-
 body{
     color: var(--secondary-text-colar);
     font-family: 'Roboto', sans-serif;
@@ -171,9 +165,20 @@ img{
 }
 
 /* hero */
-.hero{
+.hero.section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
     text-align: center;
     background-color: var(--secondary-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/backimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-title{
@@ -194,10 +199,7 @@ img{
     padding-bottom: 94px;
 }
 
-.hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
 
 .section-title{
     margin-top: 0;

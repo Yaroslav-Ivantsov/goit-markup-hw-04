@@ -19,6 +19,7 @@
     --bg-buttom-colar: #188CE8;
     --br-header-colar: #ECECEC;
     --br-card-colar: #EEEEEE;
+    --soc-main-colar: #AFB1B8;
     
 }
 
@@ -263,6 +264,20 @@ img{
     text-transform: uppercase;
 }
 
+.feature-icon{
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--primery-background-color);
+}
+
+.feature-svg{
+    height: 70px;
+    width: 70px;
+}
+
 
 
 .text-list{
@@ -326,11 +341,51 @@ img{
 
 .work-position{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18; 
 }
+
+.social{
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.social a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: var(--soc-main-colar);
+}
+
+.social a:hover,
+.social a:focus{
+    border-radius: 50%;
+    color: var(--white-text-color);
+    background-color: var(--acent-text-color);
+    fill: var(--white-text-color);
+}
+
+.social .social-links:not(:last-child){
+    margin-right: 10px;
+}
+
+.soc{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 
 /* fotter */
 

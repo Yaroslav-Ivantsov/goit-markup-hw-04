@@ -59,6 +59,7 @@ ul{
 }
 
 
+
 /* Header */
 
 header{
@@ -148,6 +149,24 @@ img{
     margin-left: 50px;
 }
 
+
+/* Icons header */
+
+.icon-mail {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+
 .site-contacts a{
     text-decoration: none;
 }
@@ -164,6 +183,12 @@ img{
 .site-contacts .contacts-link:focus{
     color: var(--acent-text-color);
 }
+
+.contacts-link{
+    display: inline-flex;
+    align-items: center;
+}
+
 
 /* hero */
 .hero.section{
@@ -383,6 +408,41 @@ img{
     height: 20px;
 }
 
+/* Section clients */
+
+.companies{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.clients a{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--soc-main-colar);
+    border: 1px solid var(--soc-main-colar);
+    border-radius: 4px;
+}
+
+.companies .company-card:not(:last-child){
+    margin-right: 30px;
+}
+
+.companies a:hover,
+.companies a:focus{
+    fill: var(--acent-text-color);
+    border: 1px solid var(--acent-text-color);
+    
+}
+
+.comp-logo{
+    width: 106px;
+    height: 60px;
+}
+
 
 
 
@@ -397,6 +457,7 @@ footer{
     background-color: var(--secondary-background-color);
 }
 
+
 /* fotter-logo */
 .logo-footer{
     font-family: 'Raleway', sans-serif;
@@ -406,6 +467,20 @@ footer{
     line-height: 1.2;       
 }
 
+.connect-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+
+.footer-flex{
+    display: flex;
+}
 
 .logo-footer .logo-footer-start{
     color: var(--acent-text-color);
@@ -455,6 +530,56 @@ footer{
 .contacts-nav .cont-list:focus{
     color: var(--acent-text-color);
 }
+
+.footer-block .icon-list{
+    display: flex;
+    width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.icon-list a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 50%;
+    fill: var(--white-text-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-list a:hover,
+.icon-list a:focus{
+    border-radius: 50%;
+    fill: var(--white-text-color);
+    color: var(--white-text-color);
+    background-color: var(--acent-text-color);
+}
+
+.footer-links{
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.icon-list .icons:not(:last-child){
+    margin-right: 10px;
+}
+
+
+.ficon{
+    width: 20px;
+    height: 20px;
+}
+
+
 
 address{
     font-style: normal;
@@ -522,12 +647,14 @@ button:focus{
 .button-list:focus{
     background-color: var(--acent-text-color);
     color: var(--white-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
 .button-list.current{
     background-color: var(--acent-text-color);
     color: var(--white-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -542,6 +669,11 @@ button:focus{
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px;
+}
+
+.project-work:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .project-work:nth-child(3n){
